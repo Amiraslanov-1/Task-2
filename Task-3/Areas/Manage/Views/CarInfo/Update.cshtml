@@ -1,0 +1,59 @@
+﻿@model CarInfo
+@{
+    ViewData["Title"] = " Create";
+}
+
+<form method="post" enctype="multipart/form-data" style="margin-top:150px; margin-left:50px; ">
+    <div class="mb-3">
+        <label asp-for=Model></label><br />
+        <input class=form-control asp-for=Model>
+        <span class=" text-danger " asp-validation-for=Model></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for=HeaderText></label><br />
+        <input class=form-control asp-for=HeaderText>
+        <span class=" text-danger " asp-validation-for=HeaderText></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for=Photos></label><br />
+        <input class=form-control asp-for=Photos>
+        <span class=" text-danger " asp-validation-for=Photos></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for=Luggage></label><br />
+        <input class=form-control asp-for=Luggage>
+        <span class=" text-danger " asp-validation-for=Luggage></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for=Seats></label><br />
+        <input class=form-control asp-for=Seats>
+        <span class=" text-danger " asp-validation-for=Seats></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for=Transmission></label><br />
+        <input class=form-control asp-for=Transmission>
+        <span class=" text-danger " asp-validation-for=Transmission></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for=AirCondition></label><br />
+        <input class=form-control asp-for=AirCondition>
+        <span class=" text-danger " asp-validation-for=AirCondition></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for=Doors></label><br />
+        <input class=form-control asp-for=Doors>
+        <span class=" text-danger " asp-validation-for=Doors></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for=MinAge></label><br />
+        <input class=form-control asp-for=MinAge>
+        <span class=" text-danger " asp-validation-for=MinAge></span>
+    </div>
+
+
+    <div class="mb-3">
+        <input type="submit" class="btn btn-dark" value="Create" />
+    </div>
+
+</form>
+

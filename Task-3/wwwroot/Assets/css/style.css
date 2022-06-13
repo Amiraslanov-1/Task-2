@@ -1,0 +1,243 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navig {
+  padding-left: 200px;
+}
+
+.navig a {
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.header-nav {
+  height: 70px;
+  padding-top: 20px;
+  background-color: #1052df;
+}
+
+.header-nav span {
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.header-nav .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 300px;
+}
+
+.header-nav .list li,
+.header-nav .list a {
+  list-style: none;
+  margin-right: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+#First {
+  height: 600px;
+  position: relative;
+}
+
+#First img:first-child {
+  width: 100%;
+  height: 100%;
+}
+
+#First .text-box {
+  color: white;
+  bottom: 10px;
+  position: absolute;
+}
+
+#First .text-box h1 {
+  font-size: 62px;
+}
+
+#First .text-box p {
+  font-size: 20px;
+}
+
+#First .form-car {
+  width: 350px;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+  background-color: rgba(13, 83, 235, 0.685);
+}
+
+#First .form-car h1 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+#OurBest {
+  margin-top: 70px;
+}
+
+#OurBest .header-text {
+  text-align: center;
+}
+
+#OurBest .car-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#OurBest .car-card .icon-box {
+  margin-right: 25px;
+  width: 70px;
+  height: 55px;
+  background-color: #2842cd;
+}
+
+#Vehicle {
+  margin-top: 70px;
+}
+
+#Vehicle .header-text {
+  text-align: center;
+}
+
+#Vehicle .car-list li {
+  padding: 13px;
+  list-style: none;
+  width: 250px;
+  height: 50px;
+  border-left: 5px solid #292828;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+#Vehicle .car-list li:hover {
+  border-left: 5px solid #2238b4;
+  color: #3b3bd1;
+}
+
+#Vehicle .content-box .img-box {
+  width: 600px;
+  height: 350px;
+  display: none;
+}
+
+#Vehicle .content-box .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+#Vehicle .content-box .img-box.show {
+  display: block;
+}
+
+#Vehicle .info-list {
+  display: none;
+}
+
+#Vehicle .info-list li {
+  padding: 5px;
+  list-style: none;
+  width: 300px;
+  height: 40px;
+  border-bottom: 1px solid #777676;
+}
+
+#Vehicle .info-list li span {
+  margin-right: 35px;
+  font-size: 20px;
+}
+
+#Vehicle .info-list .btn {
+  background-color: blue;
+  margin-top: 10px;
+  color: white;
+  margin-left: 150px;
+}
+
+#Vehicle .info-list .btn:hover {
+  background-color: black;
+}
+
+#Vehicle .info-list.show {
+  display: block;
+}
+
+#CarInfo {
+  position: relative;
+  margin-top: 100px;
+  height: 300px;
+}
+
+#CarInfo img {
+  width: 100%;
+  height: 100%;
+}
+
+#CarInfo .content {
+  position: absolute;
+  margin-left: 100px;
+  top: 130px;
+  color: white;
+}
+
+#CarInfo .content .icon-p i {
+  font-size: 55px;
+}
+
+#CarInfo .content h4 {
+  font-size: 45px;
+}
+
+#CarInfo .content p {
+  font-size: 30px;
+}
+
+#NewsLetter {
+  height: 150px;
+  padding: 30px;
+  background-color: #0a64ca;
+}
+
+#NewsLetter .news-text {
+  color: white;
+}
+
+#Map .map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+#Map .map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#information .car-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 990px) {
+  #First .form-car {
+    display: none;
+  }
+  #CarInfo {
+    width: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=style.css.map */

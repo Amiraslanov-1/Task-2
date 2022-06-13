@@ -1,0 +1,213 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navig {
+    padding-left: 200px;
+    a {
+        font-size: 22px;
+        margin-right: 20px;
+    }
+}
+
+.header-nav {
+    height: 70px;
+    padding-top: 20px;
+    background-color: rgb(16, 82, 223);
+    span {
+        color: white;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    .list {
+        display: flex;
+        margin-left: 300px;
+        li,
+        a {
+            list-style: none;
+            margin-right: 20px;
+            font-size: 20px;
+            color: white;
+        }
+    }
+}
+
+#First {
+    height: 600px;
+    position: relative;
+    img:first-child {
+        width: 100%;
+        height: 100%;
+    }
+    .text-box {
+        color: white;
+        h1 {
+            font-size: 62px;
+        }
+        p {
+            font-size: 20px;
+        }
+        bottom: 10px;
+        position: absolute;
+    }
+    .form-car {
+        width: 350px;
+        position: absolute;
+        top: 250px;
+        text-align: center;
+        h1 {
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        background-color: rgba(13, 83, 235, 0.685);
+    }
+}
+
+#OurBest {
+    margin-top: 70px;
+    .header-text {
+        text-align: center;
+    }
+    .car-card {
+        display: flex;
+        .icon-box {
+            margin-right: 25px;
+            width: 70px;
+            height: 55px;
+            background-color: #2842cd;
+        }
+    }
+}
+
+#Vehicle {
+    margin-top: 70px;
+    .header-text {
+        text-align: center;
+    }
+    .car-list {
+        li {
+            padding: 13px;
+            list-style: none;
+            width: 250px;
+            height: 50px;
+            border-left: 5px solid rgb(41, 40, 40);
+            margin-bottom: 6px;
+            cursor: pointer;
+        }
+        li:hover {
+            border-left: 5px solid rgb(34, 56, 180);
+            color: rgb(59, 59, 209);
+        }
+    }
+    .content-box {
+        .img-box {
+            width: 600px;
+            height: 350px;
+            display: none;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .img-box.show {
+            display: block;
+        }
+    }
+    .info-list {
+        display: none;
+        li {
+            padding: 5px;
+            list-style: none;
+            width: 300px;
+            height: 40px;
+            border-bottom: 1px solid rgb(119, 118, 118);
+            span {
+                margin-right: 35px;
+                font-size: 20px;
+            }
+        }
+        .btn {
+            background-color: blue;
+            margin-top: 10px;
+            color: white;
+            margin-left: 150px
+        }
+        .btn:hover {
+            background-color: black;
+        }
+    }
+    .info-list.show {
+        display: block;
+    }
+}
+
+#CarInfo {
+    position: relative;
+    margin-top: 100px;
+    height: 300px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        position: absolute;
+        margin-left: 100px;
+        top: 130px;
+        color: white;
+        .icon-p {
+            i {
+                font-size: 55px;
+            }
+        }
+        h4 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 30px;
+        }
+    }
+}
+
+#NewsLetter {
+    height: 150px;
+    padding: 30px;
+    background-color: rgb(10, 100, 202);
+    .news-text {
+        color: white;
+    }
+}
+
+#Map {
+    .map-container {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+    .map-container iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+#information {
+    .car-card {
+        display: flex;
+    }
+}
+
+@media(max-width:990px) {
+    #First {
+        .form-car {
+            display: none;
+        }
+    }
+    #CarInfo {
+        width: 500px;
+        flex-direction: column;
+    }
+}
