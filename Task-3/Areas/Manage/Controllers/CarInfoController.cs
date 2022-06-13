@@ -70,12 +70,12 @@ namespace Task_3.Areas.Manage.Controllers
             }
             if (!info.Photos.CheckTypeImage("/image"))
             {
-                ModelState.AddModelError("formFile", " File Formati düzgün deyil !");
+                ModelState.AddModelError("Photos", " File Formati düzgün deyil !");
                 return View();
             }
             if (info.Photos.CheckImageLength(2))
             {
-                ModelState.AddModelError("formFile", "Fayl həcmi 2 mbnı keçir !");
+                ModelState.AddModelError("Photos", "Fayl həcmi 2 mbnı keçir !");
                 return View();
             }
             info.ImgUrl = await info.Photos.SaveFile(Path.Combine(_web.WebRootPath,"admin", "images", "screenshots"));
@@ -86,7 +86,7 @@ namespace Task_3.Areas.Manage.Controllers
             inf.Seats = info.Seats;
             inf.AirCondition = info.AirCondition;
             inf.Doors = info.Doors;
-            _context.SaveChanges();
+            _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
         }
@@ -96,7 +96,7 @@ namespace Task_3.Areas.Manage.Controllers
             if (info == null) return NotFound();
             Extention.Delete(Path.Combine(_web.WebRootPath, "admin", "images", "screenshots", info.ImgUrl));
             _context.CarInfos.Remove(info);
-            _context.SaveChangesAsync();
+            _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
     }
